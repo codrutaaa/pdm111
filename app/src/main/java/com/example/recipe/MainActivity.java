@@ -89,6 +89,16 @@ public class MainActivity extends AppCompatActivity {
                 "add in cooked pasta and mix gently till the sauce gets coated well." +
                 "finally, serve masala pasta indian style hot topped with cheese if required.",R.drawable.pasta1));
 
+        recipes1.add(new Recipes("Cheesecake","Light digestive biscuits, crushed 175g" +
+                "Baking spread or butter, melted 75g" +
+                "Carnation Light Condensed Milk 400g" +
+                "Tub light cream cheese 300g" +
+                "Lemons, juiced 2 pieces" +
+                "Mixed summer berries, to decorate 200g" +
+                "20cm (8 inch) loose-bottomed cake tin","Method",
+                "Tip the crumbs into a bowl, add the melted baking spread and mix in. Spoon the crumbs into the tin and press down. Chill for 10 minutes." +
+                        "Pour the condensed milk into a large bowl. Add the light cheese and whisk together. Mix in the lemon juice (watch it thicken!). Pour into the tin. Chill for 2-4 hours or until set." +
+                        "To serve, take the cheesecake out of the tin and place onto a plate. Decorate the cheesecake with the berries in the style of a Union Jack before serving.", R.drawable.cheesecake));
 
 
         myrecyclerView = (RecyclerView)findViewById(R.id.recyclerView_id);
