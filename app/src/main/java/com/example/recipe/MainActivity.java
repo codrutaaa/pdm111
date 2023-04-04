@@ -21,6 +21,28 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         recipes1 = new ArrayList<>();
+
+        recipes1.add(new Recipes("Greek Salad","2 thin skinless boneless chicken breasts" +
+                "mint & lemon rub" +
+                "dried oregano" +
+                "dried minced garlic" +
+                "salt and fresh cracked black pepper" +
+                "a small head of romaine lettuce, washed, dried, and chopped" +
+                "¼ red onion, thinly sliced" +
+                "2 small Persian cucumbers, sliced" +
+                "2 cups chopped tomatoes" +
+                "1 cup kalamata olives"+
+                "1 cup crumbled or cubed feta cheese" +
+                "juice of 1 1/2 to 2 lemons, add more or less to taste" +
+                "1/2 tsp Greek herb blend" +
+                "pinch of salt and pepper to taste","Method",
+                "Set oven to 350F." +
+                        "Heat a grill pan over medium high heat. Brush chicken breasts lightly with olive oil and rub both sides with a light coating of the mint & lemon Rub, minced garlic, and oregano. Add a pinch of salt and pepper." +
+                        "Grill the chicken for about 2-3 minutes per side, or until you get nice grill marks. Transfer the chicken to a baking sheet and bake for an additional 10-12 minutes, or until the chicken is cooked through and registers 165F in the center. Set aside." +
+                        "Put the lettuce in a large salad bowl." +
+                        "Put the onions, cucumbers, tomatoes, olives, and cheese in a separate bowl. Toss with enough of the dressing to moisten. Add this mixture to the salad bowl with the lettuce. Add the grilled chicken and drizzle with more dressing just before serving." +
+                        "Whisk everything together and taste to adjust any of the ingredients." ,R.drawable.greek_salad));
+
         recipes1.add(new Recipes("Chicken Roll","200 gm chopped into cubes chicken" +
                 "1 medium chopped tomato" +
                 "1/2 pinch red chilli powder" +
