@@ -7,24 +7,17 @@
     android:background="@drawable/backgr_app"
     tools:context=".StartActivity">
 
-    <ImageView
-        android:id="@+id/start_image"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/ic_launcher_foreground"
-        android:layout_marginTop="48dp"
-        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/start_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bun venit în aplicația mea!"
-        android:textSize="28sp"
-        android:textColor="@android:color/white"
-        android:layout_below="@id/start_image"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp"/>
+        android:layout_marginTop="77dp"
+        android:text="Bun venit în aplicația mea!"
+        android:textColor="@android:color/white"
+        android:textSize="28sp" />
 
     <Button
         android:id="@+id/start_button"
@@ -32,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/start_text"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="408dp"
         android:text="Start"
         android:textColor="@android:color/white"
         android:textSize="18sp" />
