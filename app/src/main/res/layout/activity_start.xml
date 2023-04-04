@@ -14,9 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="77dp"
+        android:layout_marginTop="61dp"
         android:text="Bun venit în aplicația mea!"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorPrimary"
         android:textSize="28sp" />
 
     <Button
@@ -28,5 +28,8 @@
         android:layout_marginTop="408dp"
         android:text="Start"
         android:textColor="@android:color/white"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:backgroundTint="?attr/colorPrimary"/>
+    <!-- asa colorez butonul -->
+
 </RelativeLayout>
