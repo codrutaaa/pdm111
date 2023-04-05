@@ -10,9 +10,13 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Creez un obiect RecyclerView cu numele "myrecyclerView"
     RecyclerView myrecyclerView;
+
+    // Creeaza un obiect RecyclerViewAdapter cu numele "myAdapter" care foloseste activitatea curenta si lista de retete "recipes1"
     RecyclerViewAdapter myAdapter;
 
+    // Creeaza o noua lista de obiecte Recipes cu numele "recipes1"
     List<Recipes> recipes1;
 
     @Override
@@ -22,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         recipes1 = new ArrayList<>();
 
+        //Adaugam prima reteta la lista
         recipes1.add(new Recipes("Greek Salad","2 thin skinless boneless chicken breasts" +
                 "mint & lemon rub" +
                 "dried oregano" +
@@ -41,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                         "Grill the chicken for about 2-3 minutes per side, or until you get nice grill marks. Transfer the chicken to a baking sheet and bake for an additional 10-12 minutes, or until the chicken is cooked through and registers 165F in the center. Set aside." +
                         "Put the lettuce in a large salad bowl." +
                         "Put the onions, cucumbers, tomatoes, olives, and cheese in a separate bowl. Toss with enough of the dressing to moisten. Add this mixture to the salad bowl with the lettuce. Add the grilled chicken and drizzle with more dressing just before serving." +
-                        "Whisk everything together and taste to adjust any of the ingredients." ,R.drawable.greek_salad));
+                        "Whisk everything together and taste to adjust any of the ingredients." ,R.drawable.greek_salad));//asociez reteta cu imaginea corespunzatoare
 
         recipes1.add(new Recipes("Chicken Roll","200 gm chopped into cubes chicken" +
                 "1 medium chopped tomato" +
@@ -55,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 "1 lemon wedges" +
                 "1 teaspoon tomato ketchup" +
                 "1 tablespoon green chilli sauce","Method",
-                "Chicken Roll is a delectable North Indian recipe made using all purpose flour, stir-fried chicken, yoghurt and a variety of vegetables rolled into paranthas. On days you do not want to prepare an elaborate meal, this delectable dish can be a saviour. Rolls are quite popular across India and they are often a favourite evening snack. Egg Roll, Kathi Kebab Roll, Mutton Roll, Paneer Roll, Potato Roll and even Fish Roll are among its many variations. This easy roll recipe is made using chicken and has the unforgettable aroma of Indian spices. You can also utilize your leftover parathas and chapatis in making this recipe. If you do not like to use all-purpose flour or maida, you can make it with whole wheat flour too. In fact, it can be made even with leftover chicken. All you have to ensure is that you use the right amount of spices so that the flavour is not lost. Easy to pack and carry, you can also take it to office or prepare it for picnics and day trips. A must try roll recipe for all chicken lovers!\n",R.drawable.chicken_roll));
+                "Chicken Roll is a delectable North Indian recipe made using all purpose flour, stir-fried chicken, yoghurt and a variety of vegetables rolled into paranthas. On days you do not want to prepare an elaborate meal, this delectable dish can be a saviour. Rolls are quite popular across India and they are often a favourite evening snack. Egg Roll, Kathi Kebab Roll, Mutton Roll, Paneer Roll, Potato Roll and even Fish Roll are among its many variations. This easy roll recipe is made using chicken and has the unforgettable aroma of Indian spices. You can also utilize your leftover parathas and chapatis in making this recipe. If you do not like to use all-purpose flour or maida, you can make it with whole wheat flour too. In fact, it can be made even with leftover chicken. All you have to ensure is that you use the right amount of spices so that the flavour is not lost. Easy to pack and carry, you can also take it to office or prepare it for picnics and day trips. A must try roll recipe for all chicken lovers!\n",R.drawable.chicken_roll));//asociez reteta cu imaginea corespunzatoare
 
         recipes1.add(new Recipes("Donut","1 c. whole milk" +
                 "1/4 c. plus 1 tsp. granulated sugar, divided" +
@@ -69,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 "Grease a large bowl with cooking spray and set aside. In a small, microwave-safe bowl or glass measuring cup, add milk. Microwave until lukewarm, 40 seconds. Add a teaspoon of sugar and stir to dissolve, then sprinkle over yeast and let sit until frothy, about 8 minutes.\n" +
                 "Make glaze: In a large bowl, whisk together milk, powdered sugar, and vanilla until smooth. Set aside.\n" +
                 "Line a large baking sheet with paper towels. In a large dutch oven over medium heat, heat 2'' oil to 350°. Cook doughnuts, in batches, until deeply golden on both sides, about 1 minute per side. Holes will cook even faster!\n" +
-                "Transfer doughnuts to paper towel-lined baking sheet to drain and cool slightly. Dip into glaze, then place onto a cooling rack (or eat immediately!)",R.drawable.donut1));
+                "Transfer doughnuts to paper towel-lined baking sheet to drain and cool slightly. Dip into glaze, then place onto a cooling rack (or eat immediately!)",R.drawable.donut1));//asociez reteta cu imaginea corespunzatoare
 
         recipes1.add(new Recipes("Dosa","3 cups rice" +
                 "1 cup urad daal (split, skinless black gram)" +
@@ -79,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                 "Wash the rice and urad daal well. Add the fenugreek seeds to the mix and fill enough water in the rice-daal bowl to cover them about 2-inch deep. Soak overnight.\n" +
                 "Put some cooking oil in a small bowl and keep ready. You will also need a bowl of ice cold water, a large, flat nonstick pan, 2 sheets of paper towel, a ladle, a spatula, and a basting brush.\n" +
                 "When the upper surface begins to look cooked (it will no longer look soft or runny), flip the dosa. By this time, ideally, the surface that was underneath should be light golden in color. Cook for 1 minute after flipping.\n" +
-                "The dosa is almost done. Fold it in half and allow to cook for 30 seconds more.",R.drawable.dosa1));
+                "The dosa is almost done. Fold it in half and allow to cook for 30 seconds more.",R.drawable.dosa1));//asociez reteta cu imaginea corespunzatoare
 
         recipes1.add(new Recipes("Pancake","1 1/4 cups milk" +
                 "1 egg" +
@@ -89,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 "1 teaspoon salt" +
                 "1 tablespoon white sugar","Method",
                 "In a large bowl, sift together the flour, baking powder, salt and sugar. Make a well in the center and pour in the milk, egg and melted butter; mix until smooth." +
-                "Heat a lightly oiled griddle or frying pan over medium high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. Brown on both sides and serve hot.",R.drawable.pancakes));
+                "Heat a lightly oiled griddle or frying pan over medium high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. Brown on both sides and serve hot.",R.drawable.pancakes));//asociez reteta cu imaginea corespunzatoare
 
         recipes1.add(new Recipes("Pasta","1 tsp oil" +
                 "1 tsp butter" +
@@ -112,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                 "cover and simmer for 5 minutes." +
                 "now add in 2 tbsp tomato sauce and ½ tsp mixed herbs. mix well." +
                 "add in cooked pasta and mix gently till the sauce gets coated well." +
-                "finally, serve masala pasta indian style hot topped with cheese if required.",R.drawable.pasta1));
+                "finally, serve masala pasta indian style hot topped with cheese if required.",R.drawable.pasta1));//asociez reteta cu imaginea corespunzatoare
 
         recipes1.add(new Recipes("Cheesecake","Light digestive biscuits, crushed 175g" +
                 "Baking spread or butter, melted 75g" +
@@ -123,15 +128,19 @@ public class MainActivity extends AppCompatActivity {
                 "20cm (8 inch) loose-bottomed cake tin","Method",
                 "Tip the crumbs into a bowl, add the melted baking spread and mix in. Spoon the crumbs into the tin and press down. Chill for 10 minutes." +
                         "Pour the condensed milk into a large bowl. Add the light cheese and whisk together. Mix in the lemon juice (watch it thicken!). Pour into the tin. Chill for 2-4 hours or until set." +
-                        "To serve, take the cheesecake out of the tin and place onto a plate. Decorate the cheesecake with the berries in the style of a Union Jack before serving.", R.drawable.cheesecake));
+                        "To serve, take the cheesecake out of the tin and place onto a plate. Decorate the cheesecake with the berries in the style of a Union Jack before serving.", R.drawable.cheesecake));//asociez reteta cu imaginea corespunzatoare
 
 
+        // Se initializeaza un obiect de tip RecyclerView si se asociaza cu elementul din layout-ul xml cu id-ul "recyclerView_id"
         myrecyclerView = (RecyclerView)findViewById(R.id.recyclerView_id);
 
+        // Se creaza un obiect de tip RecyclerViewAdapter si i se transmit contextul activitatii curente si o lista de obiecte de tip Recipe
         myAdapter = new RecyclerViewAdapter(this,recipes1);
 
+        // Se seteaza modul de afisare al elementelor din RecyclerView (pt a afisa grid-ul), prin intermediul unui obiect de tip GridLayoutManager cu 1 coloana
         myrecyclerView.setLayoutManager(new GridLayoutManager(this,1));
 
+        // Se seteaza adapterul pentru RecyclerView cu obiectul de tip RecyclerViewAdapter creat anterior
         myrecyclerView.setAdapter(myAdapter);
 
 
