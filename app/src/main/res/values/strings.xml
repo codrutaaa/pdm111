@@ -2,4 +2,7 @@
     <string name="app_name">Recipe</string>
     <string name="recipeName">Recipe Name</string>
     <string name="ingredients">Ingredients</string>
+    <string name="save_recipe">save</string>
+    <string name="method">Method</string>
+    <string name="recipe_title">Recipe Title</string>
 </resources>
