@@ -11,6 +11,7 @@ public class RecipeActivity extends AppCompatActivity {
     private TextView mRecipeIngredients;
     private TextView mRecipeMethodTitle;
     private TextView mRecipe;
+    private TextView mNotRecommened;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class RecipeActivity extends AppCompatActivity {
         mRecipeIngredients = (TextView)findViewById(R.id.ingredients);
         mRecipeMethodTitle = (TextView)findViewById(R.id.method);
         mRecipe = (TextView)findViewById(R.id.recipe);
+        mNotRecommened = (TextView)findViewById(R.id.aboutB);
 
         // Extrage datele trimise prin intent si seteaza textul in TextView-urile corespunzatoare
         Intent intent = getIntent();
@@ -29,11 +31,13 @@ public class RecipeActivity extends AppCompatActivity {
         String Ingredients = intent.getExtras().getString("RecipeIngredients");
         String MethodTitle = intent.getExtras().getString("RecipeMethodTitle");
         String Recipe = intent.getExtras().getString("Recipe");
+        String NotRecommened = intent.getExtras().getString("NotRecommended");
 
         mRecipeName.setText(Title);
         mRecipeIngredients.setText(Ingredients);
         mRecipeMethodTitle.setText(MethodTitle);
         mRecipe.setText(Recipe);
+        mNotRecommened.setText(NotRecommened);
 
     }
 }

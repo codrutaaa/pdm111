@@ -8,17 +8,20 @@ public class Recipes {
     private String Recipe;
     private int Thumbnail;
 
+    private String NotRecommended;
+
 
     // Constructorul clasei Recipes.
     // Primește numele, ingredinetele, titlul metodei de preparare, textul complet al metodei și
     // ID-ul resursei de imagine pentru miniatura rețetei.
-    public Recipes(String name, String recipeIngredients, String recipeMethodTitle,String recipe, int thumbnail){
+    public Recipes(String name, String recipeIngredients, String recipeMethodTitle,String recipe, int thumbnail, String notRecommended){
 
         RecipeName = name;
         RecipeIngredients = recipeIngredients;
         RecipeMethodTitle = recipeMethodTitle;
         Recipe = recipe;
         Thumbnail = thumbnail;
+        NotRecommended = notRecommended;
 
     }
 
@@ -46,5 +49,8 @@ public class Recipes {
     // Metoda publică care returnează ID-ul resursei de imagine pentru miniatura rețetei.
     public int getThumbnail(){
         return Thumbnail;
+    }
+    public  String getNotRecommended(){
+        return NotRecommended;
     }
 }

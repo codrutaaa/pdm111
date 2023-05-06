@@ -17,6 +17,24 @@
             android:orientation="vertical"
             >
             <TextView
+                android:id="@+id/textB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Not recommended"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/aboutB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_margin="18dp"
+                android:textSize="20sp"
+                android:text="Not recommended for people that suffers of ..........."/>
+
+            <TextView
                 android:id="@+id/text_recipe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -54,6 +72,7 @@
                 android:text="@string/ingredients"
 
                 />
+
 
 
 

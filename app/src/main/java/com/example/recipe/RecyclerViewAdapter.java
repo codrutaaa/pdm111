@@ -57,6 +57,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 intent.putExtra("RecipeMethodTitle",mData.get(i).getRecipeMethodTitle());
                 intent.putExtra("Recipe",mData.get(i).getRecipe());
                 intent.putExtra("Thumbnail",mData.get(i).getThumbnail());
+                intent.putExtra("NotRecommended",mData.get(i).getNotRecommended());
                 // pornim activitatea RecipeActivity
                 mContext.startActivity(intent);
             }
