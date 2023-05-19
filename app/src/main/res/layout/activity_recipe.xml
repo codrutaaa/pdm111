@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RecipeActivity">
@@ -73,7 +73,28 @@
 
                 />
 
+            <TextView
+                android:id="@+id/textView_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:layout_marginTop="20dp"
+                android:text="Reviews:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
+            <EditText
+                android:id="@+id/editText_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Introduceți review-ul aici"/>
+
+
+            <Button
+                android:id="@+id/button_save_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salvează Review-ul"/>
 
 
         </LinearLayout>
