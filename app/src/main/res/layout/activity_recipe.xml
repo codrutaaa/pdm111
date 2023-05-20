@@ -32,7 +32,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_margin="18dp"
                 android:textSize="20sp"
-                android:text="Not recommended for people that suffers of ..........."/>
+                android:text="Not recommended for people that suffers of "/>
 
             <TextView
                 android:id="@+id/text_recipe"
@@ -79,23 +79,46 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="18dp"
                 android:layout_marginTop="20dp"
-                android:text="Reviews:"
+                android:textAlignment="center"
+                android:text="Reviews or Users Recipes:"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:id="@+id/editText_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please enter your username"
+                android:minHeight="48dp"
+                android:padding="8dp" />
 
             <EditText
                 android:id="@+id/editText_review"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Introduceți review-ul aici"/>
+                android:hint="Enter your review or recipe here"
+                android:minHeight="96dp"
+                android:padding="8dp" />
 
 
             <Button
                 android:id="@+id/button_save_review"
-                android:layout_width="wrap_content"
+                android:layout_width="159dp"
                 android:layout_height="wrap_content"
-                android:text="Salvează Review-ul"/>
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:backgroundTint="?attr/colorPrimary"
+                android:text="Save"
 
+                />
+
+            <LinearLayout
+                android:id="@+id/reviews_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                />
 
         </LinearLayout>
 

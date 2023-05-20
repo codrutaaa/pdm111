@@ -37,7 +37,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         View view ;
         LayoutInflater layoutInflater = LayoutInflater.from(mContext);// obtinem LayoutInflater-ul pentru a putea inflata layout-ul din cardview_recipe
         view = layoutInflater.inflate(R.layout.cardview_recipe,viewGroup,false);// inflam layout-ul cu cardview_recipe.xml
-        return  new MyHolder(view);
+        return new MyHolder(view);
     }
 
     // Metoda pentru a afișa datele din lista în holder-ul dat ca parametru
@@ -71,7 +71,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     // Clasa ViewHolder pentru a tine referinta la componentele din celula RecyclerView
-    public class MyHolder extends RecyclerView.ViewHolder {
+    public static class MyHolder extends RecyclerView.ViewHolder {
 
         TextView recipeTitle;// textul cu titlul retetei
         CardView cardView;// cardview-ul pentru afisarea unei celule din RecyclerView

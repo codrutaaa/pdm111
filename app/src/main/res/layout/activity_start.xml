@@ -15,7 +15,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="61dp"
-        android:text="Bun venit în aplicația mea!"
+        android:text="Welcome to Foodie!"
         android:textColor="@color/colorPrimary"
         android:textSize="28sp" />
 
